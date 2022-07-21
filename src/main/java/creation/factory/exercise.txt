@@ -1,0 +1,17 @@
+You work for a dog industry, your company sells different dog's breeds, that are:
+    - Poodle
+    - Pinscher
+    - Cur
+
+    attributes:
+        - name
+        - breed
+        - size
+
+    actions:
+        - simpleBark()
+        - barkYourBreed()
+        - barkYourSize()
+        - poop()
+
+Your task is to implement a dog factory in order to instantiate dogs for your customers.
