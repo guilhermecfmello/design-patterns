@@ -1,0 +1,50 @@
+You maintain a lan house, that saves digital and physical medias to be consumed by your customers
+they can pay to play games in a Console or a PC. They also can enter in your movie room to watch it through Netflix or Youtube.
+An existing game can only be played in a PC or a Console, in this universe there is no multiplatform games.
+The same logic is applied for movies, it can only be played in Netflix XOR YouTube.
+
+You have to instantiate the games and movies to be played for your customers enjoying using Builder pattern.
+    - Game:
+        attrs:
+            name: Game name
+            genre: Game genre, can be: Arcade, Action, Fantasy, Indie
+            hours: Hours of content
+        methods:
+            execute(): If the game is already prepared, start to play the game
+
+    - Console:
+        attrs:
+            EAN: EAN code for this Console
+            disk: Object<Game> Disk to execute
+        methods:
+            insertDisc(): Insert disk to read
+            login(): Login into console platform
+            start(): Play the disk inserted, must be logged
+    - PC:
+        attrs:
+            VideoCard: Video card name
+            game: <Game> game to run, must be saved in hard drive
+        methods:
+            download(): Download the content
+            start(): Play the content
+
+    - Movie:
+        attrs:
+            name: Movie name
+            genre: "Actions|Comedy|Drama|Fantasy"
+            rating: Public rating
+            hours: Hours of content
+        methods:
+            start(): Play the movie
+   - Netflix:
+        attrs:
+            movie: Object<Movie> to play
+            user: username
+        methods:
+            login(): set username into platform
+            play(): Play if user is already logged in
+   - Youtube:
+        attrs:
+            movie: Object<Movie> to play
+        methods:
+            play(): play the movies
