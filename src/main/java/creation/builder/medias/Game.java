@@ -1,17 +1,13 @@
 package creation.builder.medias;
 
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.Data;
 
-@RequiredArgsConstructor
+@Data
 public class Game {
-    @NonNull
     private String name;
 
-    @NonNull
     private String genre;
 
-    @NonNull
     private Integer hours;
 
     public boolean execute() {

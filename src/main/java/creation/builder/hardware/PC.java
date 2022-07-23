@@ -1,13 +1,12 @@
 package creation.builder.hardware;
 
 import creation.builder.medias.Game;
-import lombok.Setter;
+import lombok.Data;
 
-public class PC {
-    @Setter
+@Data
+public class PC implements Platform {
     private String videoCard;
 
-    @Setter
     private Game game;
 
     private boolean isDownloaded;

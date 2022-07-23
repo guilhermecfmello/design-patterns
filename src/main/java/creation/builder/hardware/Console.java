@@ -1,22 +1,18 @@
 package creation.builder.hardware;
 
 import creation.builder.medias.Game;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.UUID;
 
-public class Console {
-    @Setter
+@Data
+public class Console implements Platform {
+
     private UUID EAN;
 
     private Game disk;
 
     private boolean logged;
-
-    public void insertDisc(Game disk) {
-        this.disk = disk;
-    }
 
     public void login(String user) {
         System.out.println("Console\n\tLogged in user: " + user);
