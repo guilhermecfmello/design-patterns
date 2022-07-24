@@ -1,0 +1,1 @@
+Each human can have only one heart, create a Singleton to assure that there is only one instance of Heart.
