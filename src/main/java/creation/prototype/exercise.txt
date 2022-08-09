@@ -1,0 +1,2 @@
+You're a divine entity that works for god. He eventually asks you to create new planets and most of them are identical.
+Use Prototype pattern to create copy of planets.
